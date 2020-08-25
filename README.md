@@ -2,7 +2,7 @@
 
 Who doesn't love a good joke?!
 
-![Screenshot](resources/img/plugin-logo.png)
+'Jokes' is a simple Craft CMS widget to get you through the day.
 
 ## Requirements
 
@@ -21,23 +21,5 @@ To install the plugin, follow these instructions.
         composer require remcoov/jokes
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Jokes.
-
-## Jokes Overview
-
--Insert text here-
-
-## Configuring Jokes
-
--Insert text here-
-
-## Using Jokes
-
--Insert text here-
-
-## Jokes Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
 
 Brought to you by [remcoov](https://github.com/remcoov)
