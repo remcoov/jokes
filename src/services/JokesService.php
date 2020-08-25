@@ -33,12 +33,12 @@ class JokesService extends Component
     // Public Methods
     // =========================================================================
 
-    public function getJoke()
+    public function getJoke(string $categories, string $blacklistFlags) : array
     {
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-          CURLOPT_URL => "https://sv443.net/jokeapi/v2/joke/Miscellaneous,Dark,Pun?blacklistFlags=nsfw,religious,political,racist,sexist",
+          CURLOPT_URL => "https://sv443.net/jokeapi/v2/joke/".$categories."?blacklistFlags=".$blacklistFlags,
           CURLOPT_RETURNTRANSFER => true,
           CURLOPT_ENCODING => "",
           CURLOPT_MAXREDIRS => 10,
@@ -53,7 +53,7 @@ class JokesService extends Component
 
         curl_close($curl);
         if( $httpcode == 200) {
-            return $response;
+            return json_decode($response, TRUE);
         } else {
             return '{
                 "type": "http-error"
