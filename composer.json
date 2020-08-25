@@ -1,0 +1,49 @@
+{
+    "name": "remcoov/jokes",
+    "description": "Who doesn't love a good joke?!",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "jokes"
+    ],
+    "support": {
+        "docs": "https://github.com/remcoov/jokes/blob/master/README.md",
+        "issues": "https://github.com/remcoov/jokes/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "remcoov",
+            "homepage": "https://github.com/remcoov"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "remcoov\\jokes\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Jokes",
+        "handle": "jokes",
+        "developer": "remcoov",
+        "developerUrl": "https://github.com/remcoov",
+        "documentationUrl": "https://github.com/remcoov/jokes/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/remcoov/jokes/master/CHANGELOG.md",
+        "components": {
+            "jokesService": "remcoov\\jokes\\services\\JokesService"
+        },
+        "class": "remcoov\\jokes\\Jokes"
+    }
+}

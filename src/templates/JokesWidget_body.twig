@@ -1,0 +1,25 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Jokes plugin for Craft CMS
+ *
+ * JokesWidget Widget Body
+ *
+ * @author    remcoov
+ * @copyright Copyright (c) 2020 remcoov
+ * @link      https://github.com/remcoov
+ * @package   Jokes
+ * @since     1.0.0
+ */
+#}
+
+{% if joke['type'] != 'http-error' %}
+    {% if joke['type'] == 'twopart' %}
+        <b>{{ joke['setup']|nl2br }}</b><br><br>
+        {{ joke['delivery']|nl2br }}
+    {% else %}
+        {{ joke['joke']|nl2br }}
+    {% endif %}
+{% else %}
+    <b>Here's a joke:</b><br>this widget is not working due to a HTTP error.
+{% endif %}
