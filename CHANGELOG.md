@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.2 - 2020-08-27
+### Removed
+- Dark jokes, because .. well .. they were pretty dark.
+
+### Added
+- Joke examples in Readme
+
 ## 1.0.1 - 2020-08-25
 ### Added
 - Programmer jokes

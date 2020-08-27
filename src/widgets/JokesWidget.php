@@ -72,7 +72,7 @@ class JokesWidget extends Widget
 
     public function getBodyHtml()
     {
-        $joke = Jokes::$plugin->jokesService->getJoke($categories = 'Programming,Miscellaneous,Dark,Pun', $blacklistFlags = 'nsfw,religious,political,racist,sexist');
+        $joke = Jokes::$plugin->jokesService->getJoke($categories = 'Programming,Miscellaneous,Pun', $blacklistFlags = 'nsfw,religious,political,racist,sexist');
 
         return Craft::$app->getView()->renderTemplate(
             'jokes/JokesWidget_body',

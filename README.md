@@ -2,7 +2,17 @@
 
 Who doesn't love a good joke?!
 
-'Jokes' is a simple Craft CMS widget to get you through the day.
+'Jokes' is a simple Craft CMS widget to start your Dashboard-day with some awesome jokes! Includes jokes like:
+
+> **Dads are like boomerangs.** <br>I hope.
+
+> **How do you tell HTML from HTML5?**<br>
+-Try it out in Internet Explorer<br>
+-Did it work?<br>
+-No?<br>
+-It's HTML5.<br>
+
+> **My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff and right.**
 
 ## Requirements
 

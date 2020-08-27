@@ -2,7 +2,7 @@
     "name": "remcoov/jokes",
     "description": "Who doesn't love a good joke?!",
     "type": "craft-plugin",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "keywords": [
         "craft",
         "cms",
