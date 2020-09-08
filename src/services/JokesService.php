@@ -59,6 +59,5 @@ class JokesService extends Component
                 "type": "http-error"
             }';
         }
-        
     }
 }

@@ -10,6 +10,7 @@
 
 namespace remcoov\jokes;
 
+use remcoov\jokes\variables\JokesVariable;
 use remcoov\jokes\services\JokesService as JokesServiceService;
 use remcoov\jokes\widgets\JokesWidget as JokesWidgetWidget;
 
@@ -56,8 +57,8 @@ class Jokes extends Plugin
 
     // Public Properties
     // =========================================================================
-
-    public $schemaVersion = '1.0.0';
+    // You forgot to change this noob
+    public $schemaVersion = '1.0.2';
 
     // Public Methods
     // =========================================================================
@@ -76,6 +77,15 @@ class Jokes extends Plugin
             }
         );
 
+        // Register our variables
+        Event::on(
+            CraftVariable::class,
+            CraftVariable::EVENT_INIT,
+            function (Event $event) {
+                /** @var CraftVariable $variable */
+                $variable = $event->sender;
+                $variable->set('jokes', JokesVariable::class);
+            }
+        );
     }
-
 }
