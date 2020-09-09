@@ -30,24 +30,6 @@ use craft\events\RegisterUrlRulesEvent;
 
 use yii\base\Event;
 
-/**
- * Craft plugins are very much like little applications in and of themselves. We’ve made
- * it as simple as we can, but the training wheels are off. A little prior knowledge is
- * going to be required to write a plugin.
- *
- * For the purposes of the plugin docs, we’re going to assume that you know PHP and SQL,
- * as well as some semi-advanced concepts like object-oriented programming and PHP namespaces.
- *
- * https://docs.craftcms.com/v3/extend/
- *
- * @author    remcoov
- * @package   Jokes
- * @since     1.0.0
- *
- * @property  JokesServiceService $jokesService
- * @property  Settings $settings
- * @method    Settings getSettings()
- */
 class Jokes extends Plugin
 {
     // Static Properties
@@ -57,8 +39,7 @@ class Jokes extends Plugin
 
     // Public Properties
     // =========================================================================
-    // You forgot to change this noob
-    public $schemaVersion = '1.0.2';
+    public $schemaVersion = '1.0.3';
 
     // Public Methods
     // =========================================================================

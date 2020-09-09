@@ -32,4 +32,12 @@ To install the plugin, follow these instructions.
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Jokes.
 
+## Variable
+
+You can also output a single joke in your templates. You can do this simply by using the following code:
+
+```
+{{ craft.jokes.tellMeAJoke|raw }}
+```
+
 Brought to you by [remcoov](https://github.com/remcoov)

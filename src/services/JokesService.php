@@ -55,9 +55,9 @@ class JokesService extends Component
         if( $httpcode == 200) {
             return json_decode($response, TRUE);
         } else {
-            return '{
-                "type": "http-error"
-            }';
+            $joke = array();
+            $joke['type'] = 'http-error';
+            return $joke;
         }
     }
 }
