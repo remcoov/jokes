@@ -1,0 +1,79 @@
+/**
+ * Jokes plugin for Craft CMS 3.x
+ *
+ * Who doesn't love a good joke?!
+ *
+ * @link      https://github.com/remcoov
+ * @copyright Copyright (c) 2020 remcoov
+ */
+
+#jokes__icon {
+    width: 100%;
+    cursor: pointer;
+}
+
+#jokes__icon svg {
+    margin: 0px auto 20px auto;
+    display: block;
+    opacity: 0.3;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+#jokes__icon svg:hover {
+    opacity: 1;
+}
+
+#jokes__icon.lulz svg {
+    animation: shake 1.5s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.jokes__text {
+    text-align: center;
+}
+
+#jokes__anotherjoke {
+    width: 100%;
+    cursor: pointer;
+}
+
+#jokes__anotherjoke svg {
+    margin: 20px auto 0px auto;
+    display: block;
+    opacity: 0.3;
+    transition: opacity .5s ease-out, transform 0.5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out, -webkit-transform 0.5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+#jokes__anotherjoke svg:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+}
